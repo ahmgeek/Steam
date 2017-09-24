@@ -23,9 +23,11 @@ dt,
 dd {
   font-family: "Merriweather", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
 }
-h1,
+
 .post-meta {
-  text-align: left;
+  float: right;
+  font-family: "Open Sans";
+  margin-left: 1rem;
 }
 a,
 a:visited {
@@ -36,7 +38,7 @@ a:visited {
 }
 a:focus,
 a:hover {
-  /*color: #178b6b;*/
+  color: #1D92C0;
 }
 p,
 li,
@@ -134,6 +136,7 @@ h1.blog-subtitle {
   margin-bottom: 85px;
   margin-left: 1px;
   padding: 0;
+  color: #E46969;
 }
 h2.blog-description {
   border-bottom: 1px solid #ecf0f1;
@@ -236,19 +239,31 @@ div.authorimage {
 }
 h1.post-title {
   margin-top: 35px;
+  color: #222;
+  text-decoration: none;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
-h1.post-title a,
+h1.post-title a {
+  border-bottom: 1px solid #1D92C0;
+  color: #151515;
+  transition: color ease 0.7s;
+  -webkit-transition: color ease 0.7s;
+}
 h1.blog-title a {
   color: #151515;
   transition: color ease 0.7s;
   -webkit-transition: color ease 0.7s;
 }
 h1.post-title a:focus,
-h1.post-title a:hover,
 h1.blog-title a:focus,
 h1.blog-title a:hover {
-  /*color: #178b6b;*/
+  color: #E46969;
   text-decoration: none;
+}
+h1.post-title a:hover {
+  color: #1D92C0;
 }
 section.post-content img {
   display: block;
@@ -393,6 +408,7 @@ a.archive-link {
 .older-posts:hover,
 .newer-posts:hover {
   /*color: #178b6b;*/
+  color: #1D92C0;
   text-decoration: none;
 }
 /* === Extras === */

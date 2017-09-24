@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
     {{#is "home"}}
-        <title>{{meta_title}} - {{meta_description}}</title>
+        <title>{{meta_title}}</title>
     {{else}}
         <title>{{meta_title}}</title>
     {{/is}}
 
-    <meta name="description" content="{{meta_description}}">
     <meta name="apple-mobile-web-app-title" content="{{meta_title}}">
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset "img/apple-touch-icon.png"}}">
@@ -38,7 +37,7 @@
 
     <header id="site-head">
         <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-        <h1 class="blog-subtitle">{{@blog.description}}</h1>
+        <h1 class="blog-subtitle">{{@blog.description}}
     </header>
 
     {{navigation}}
