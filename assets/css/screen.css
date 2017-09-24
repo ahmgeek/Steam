@@ -25,9 +25,10 @@ dd {
 }
 
 .post-meta {
-  float: right;
   font-family: "Open Sans";
   margin-left: 1rem;
+  flex: 0 auto;
+  order: 2;
 }
 a,
 a:visited {
@@ -100,12 +101,16 @@ h1 {
   margin: 0;
   padding: 0;
 }
-#site-head,
+#site-head {
+  border-bottom: 1px solid #ecf0f1;
+  margin: 100px auto -60px;
+  max-width: 630px;
+  width: 90%;
+}
 article,
 article.preview,
 a.archive-link,
 .article-nav {
-  margin: 20px auto;
   max-width: 630px;
   width: 90%;
 }
@@ -113,7 +118,11 @@ a.archive-link,
   max-width: 100%;
 }
 article.preview {
-  margin-bottom: 4em;
+  margin: 10px auto;
+}
+article.preview header {
+  display: flex;
+  align-items: center;
 }
 article.preview p.readmore {
   font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", Helvetica, Arial, "Nimbus L", sans-serif;
@@ -121,22 +130,25 @@ article.preview p.readmore {
   text-transform: uppercase;
   font-weight: 400;
 }
+small {
+  font-family: "PT Serif", Georgia, "Times New Roman", serif,"Open Sans";
+  font-weight: bold;
+  color: rgba(228, 105, 105, 1);
+}
 /* === Header === */
 h1.blog-title {
   font-size: 50px;
   line-height: 52px;
-  margin-top: 80px;
-  margin-bottom: 5px;
   padding: 0;
+  display: inline-block;
+  vertical-align: bottom;
 }
 h1.blog-subtitle {
   font-size: 26px;
-  line-height: 32px;
-  margin-top: -8px;
-  margin-bottom: 85px;
-  margin-left: 1px;
-  padding: 0;
   color: #E46969;
+  margin-top: .5rem;
+  margin-left: .1rem;
+  float: left;
 }
 h2.blog-description {
   border-bottom: 1px solid #ecf0f1;
@@ -238,12 +250,13 @@ div.authorimage {
   float: left;
 }
 h1.post-title {
-  margin-top: 35px;
+  flex: 1;
   color: #222;
   text-decoration: none;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  font-size: 24px;
 }
 h1.post-title a {
   border-bottom: 1px solid #1D92C0;
@@ -307,19 +320,17 @@ footer.post-footer {
 }
 /* === Navigation and Pagination === */
 nav {
-  border-bottom: 1px solid #ecf0f1;
-  border-top: 1px solid #ecf0f1;
   text-align: center;
   margin: -1.6em auto 2em auto;
   max-width: 630px;
 }
 nav ul {
   list-style: none;
-  margin: 0 auto;
+  margin: 10 auto;
   padding: 0;
   width: 100%;
   overflow: hidden;
-  text-align: center;
+  text-align: right;
 }
 nav ul li {
   display: inline-block;
