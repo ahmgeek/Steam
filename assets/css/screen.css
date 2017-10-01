@@ -107,12 +107,18 @@ h1 {
   max-width: 630px;
   width: 90%;
 }
-article,
+
 article.preview,
 a.archive-link,
 .article-nav {
   max-width: 630px;
   width: 90%;
+}
+
+article {
+  max-width: 630px;
+  width: 90%;
+  margin: auto;
 }
 #site-head img {
   max-width: 100%;
